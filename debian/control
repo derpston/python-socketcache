@@ -1,0 +1,17 @@
+Source: python-socketcache
+Section: python
+Priority: optional
+Maintainer: Derp Ston <derpston+packaging@sleepygeek.org>
+Build-Depends:
+    debhelper (>= 6.0.0),
+    python-support (>= 0.90)
+Standards-Version: 3.9.1
+
+Package: python-socketcache
+Architecture: all
+Depends:
+    ${python:Depends},
+    ${misc:Depends},
+Description: Python module for maintaining a cache of socket objects
+ Intended for when the user would like to send a great many UDP packets
+ without relying on a local DNS resolver cache.
