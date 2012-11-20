@@ -17,25 +17,25 @@ Features
 
 Example
 -------
-    ```python
-    import socketcache
+```python
+import socketcache
 
-    host = socketcache.UDPSocketCache("example.com", 12345)
+host = socketcache.UDPSocketCache("example.com", 12345)
 
-    # Reuse host object.
-    (sock, addr) = host.get()
-    sock.sendto("Hello!", addr)
-    ```
+# Reuse host object.
+(sock, addr) = host.get()
+sock.sendto("Hello!", addr)
+```
 Building a new package
 ----------------------
 * Don't forget to update \__version__ in src/socketcache.py and add a new version block to debian/changelog - the build will fail if the versions don't match.
 * dpkg-buildpackage -tc
 * Run lint checks:
 
-    ```
-    $ lintian python-socketcache_0.1.0_all.deb
-    $
-    ```
+```shell
+$ lintian python-socketcache_0.1.0_all.deb
+$ 
+```
 
 BUGS
 ----
@@ -45,7 +45,7 @@ TODO
 ----
 (empty)
 
-CONTRIBUTING
+Contributing
 ------------
 Contributions welcome.
 
