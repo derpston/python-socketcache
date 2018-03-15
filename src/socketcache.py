@@ -2,7 +2,7 @@ import random
 import socket
 import time
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 class UDPSocketCache:
    """Maintains a cache of SOCK_DGRAM socket objects for `ttl` seconds, preferring IPv6 over IPv4 and respecting random balancing. `ttl` defaults to 60 seconds, and `family` defaults to both IPv4 and v6."""
@@ -54,4 +54,3 @@ class UDPSocketCache:
          return random.choice(self._v4sockets)
       else:
          return None
-

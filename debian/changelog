@@ -1,7 +1,12 @@
+python-socketcache (0.1.1) unstable; urgency=low
+
+  * Removing python-support due to deprecation.
+
+ -- Derp Ston <derpston+packaging@sleepygeek.org>  Thu, 15 Mar 2018 14:02:00 +0000
+
+
 python-socketcache (0.1.0) unstable; urgency=low
 
   * Initial release.
 
  -- Derp Ston <derpston+packaging@sleepygeek.org>  Tue, 20 Nov 2012 03:20:00 +0000
-
-
